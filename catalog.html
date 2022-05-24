@@ -7,15 +7,14 @@
   <body>
     <!-- Шапка сайта -->
     <header class="main-header">
+      <!-- Логотип -->
+      <a class="navigation-logo" href="index.html">
+        <img src="#" alt="Седона">
+      </a>
       <!-- Навигация -->
       <nav class="navigation">
         <!-- Меню -->
         <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-logo" href="index.html">
-              <img src="#" alt="Седона">
-            </a>
-          </li>
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
           </li>
@@ -27,26 +26,18 @@
           </li>
         </ul>
         <!-- Пользовательское меню -->
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">Поиск</span>
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">Мне понравилось</span>
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Хочу сюда!</a>
-          </li>
-        </ul>
+        <a class="navigation-link" href="#">
+          <span class="visually-hidden">Поиск</span>
+        </a>
+        <a class="navigation-link" href="#">
+          <span class="visually-hidden">Мне понравилось</span>
+        </a>
+        <a class="button" href="#">Хочу сюда!</a>
       </nav>
     </header>
     <!-- Основное содержимое страницы -->
     <main class="main-inner">
-      <header class="inner-header">
+      <section class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrums">
           <li class="breadcrums-item">
@@ -58,10 +49,8 @@
             <a class="breadcrums-link">Гостиницы</a>
           </li>
         </ul>
-      </header>
+      </section>
       <!-- Фильтры для выбора гостиницы -->
-      <section class="catalog-hotel">
-        <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <!-- Фильтр выбора инфраструктуры -->
           <fieldset class="catalog-filter-group">
@@ -102,12 +91,13 @@
           <!-- Фильтр выбора стоимости -->
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-            <input type="range" min="0" max="9000" step="50" value="5000" name="price" id="price">
+            <div class="catalog-filter-slider"></div>
+            <input class="catalog-filter-price" type="text" placeholder="0">
+            <input class="catalog-filter-price" type="text" placeholder="9000">
           </fieldset>
           <button class="button" type="submit">Применить</button>
           <button class="button button-reset" type="reset">Сбросить</button>
         </form>
-      </section>
       <!-- Вывод результата после выбора фильтров -->
       <section class="search-results">
         <h2 class="search-results-title">Найдено гостиниц: 38</h2>
@@ -117,15 +107,9 @@
           <option value="expensive">Сначала дорогие</option>
         </select>
         <!-- Выбор типа отображения карточек -->
-        <a class="button" href="#">
-          <span class="visually-hidden">Показать карточки</span>
-        </a>
-        <a class="button" href="#">
-          <span class="visually-hidden">Показать слайдшоу</span>
-        </a>
-        <a class="button" href="#">
-          <span class="visually-hidden">Показать список</span>
-        </a>
+        <button class="button" type="button">Показать список</button>
+        <button button class="button">Показать слайдшоу</button>
+        <button button class="button">Показать список</button>
         <!-- Карточки гостиниц -->
         <ul class="housing-list">
           <li class="housing-card">
@@ -165,9 +149,7 @@
             <p class="housing-card-rating">Рейтинг: 5,0</p>
           </li>
         </ul>
-      </section>
       <!-- Пагинация на странице -->
-      <section class="pagination">
         <ul>
           <li class="pagination-item">
             <a class="pagination-link pagination-current">1</a>
@@ -212,8 +194,6 @@
     <!-- Подвал сайта -->
     <footer class="main-footer">
       <!-- Социальные сети -->
-      <section class="footer-social">
-        <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="button" href="#">
@@ -232,15 +212,13 @@
           </li>
         </ul>
         <!-- Контакты -->
-        <section class="footer-contacts">
-          <h2 class="visually-hidden">Контакты</h2>
+        <div class="footer-contacts">
           <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        </section>
+        </div>
         <!-- Сделано HTML Academy -->
         <a class="htmlacademy-link" href="https://htmlacademy.ru/">
           <span class="visually-hidden">HTML Academy</span>
         </a>
-      </section>
     </footer>
   </body>
 </html>
