@@ -146,7 +146,7 @@ body {
 /* Фильтры для выбора гостиницы */
 .catalog-filter-container {
   color: #ffffff;
-  background-image: url("../images/catalog/catalog-filter-background.jg");
+  background-image: url("../images/catalog/catalog-filter-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-color:#81b3d3;
