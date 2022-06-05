@@ -39,24 +39,22 @@ body {
 /* Шапка сайта */
 .main-header {
   background: #ffffff;
-  color: black;
+  color: #000000;
 }
 
 /* Навигация */
 .navigation-link {
   font-weight: 700;
   font-size: 20px;
-  background: #ffffff;
-  color: black;
+  color: inherit;
   text-align: center;
   text-transform: capitalize;
   text-decoration: none;
 }
 
-/* Приветствие */
-.welcom-container {
-  background: #ffffff;
-  color: black;
+.hero-container {
+  background-color:#81b3d3;
+  color: #000000;
   background-image: url("../images/main-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -100,6 +98,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  color: #333333;
 }
 
 /* Поиск гостиницы */
@@ -118,6 +117,7 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+  color: #333333;
 }
 
 /* Подписка */
@@ -126,7 +126,8 @@ body {
   background-repeat: no-repeat;
   background-size: 100% auto;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
+  background-color:#81b3d3;
 }
 
 .subscribe-title {
@@ -145,13 +146,13 @@ body {
 /* Фильтры для выбора гостиницы */
 .catalog-filter-container {
   color: #ffffff;
-  background-image: url("../images/catalog/catalog-filter-background.jpg");
+  background-image: url("../images/catalog/catalog-filter-background.jg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+  background-color:#81b3d3;
 }
 
 .inner-header-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
@@ -163,14 +164,12 @@ body {
 }
 
 .breadcrums-item:last-child {
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
 }
 
 .catalog-filter-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -178,14 +177,12 @@ body {
 }
 
 .catalog-filter-item {
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
 }
 
 .search-results-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -193,28 +190,26 @@ body {
 }
 
 .housing-card-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
 }
 
 .housing-type {
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  color: #333333;
 }
 
 .housing-card-price {
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  color: #333333;
 }
 
 .housing-card-rating {
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -223,7 +218,6 @@ body {
 }
 
 .select-control-container p {
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -241,7 +235,7 @@ body {
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
-  color: black;
+  color: #000000;
   text-decoration: none;
 }
 
