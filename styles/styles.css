@@ -31,7 +31,7 @@
 
 /* Стили для всей страницы */
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 22px;
   line-height: 26px;
 }
@@ -55,7 +55,7 @@ body {
 .hero-container {
   background-color:#81b3d3;
   color: #000000;
-  background-image: url("../images/main-background.jpg");
+  background-image: url("../images/hero-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
@@ -144,7 +144,7 @@ body {
 }
 
 /* Фильтры для выбора гостиницы */
-.catalog-filter-container {
+.catalog-filter {
   color: #ffffff;
   background-image: url("../images/catalog/catalog-filter-background.jpg");
   background-repeat: no-repeat;
@@ -159,7 +159,7 @@ body {
 }
 
 .breadcrums-item:first-child {
-  background-image: url("/images/catalog/home.svg");
+  background-image: url("../images/catalog/home.svg");
   background-repeat: no-repeat;
 }
 
