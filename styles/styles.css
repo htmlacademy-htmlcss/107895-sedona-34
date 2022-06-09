@@ -31,8 +31,6 @@
 /* Стили для всей страницы */
 body {
   font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   background: #ffffff;
@@ -58,7 +56,6 @@ body {
 
 /* Преимущества */
 .advantages-title {
-  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
@@ -75,20 +72,17 @@ body {
 }
 
 .advantages-item-title {
-  font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
 }
 
 .advantages-item-number {
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
 }
 
 .advantages-item-description {
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
@@ -100,7 +94,6 @@ body {
 }
 
 .hotel-search-title {
-  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
@@ -121,7 +114,6 @@ body {
 }
 
 .subscribe-title {
-  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
@@ -137,7 +129,6 @@ body {
 }
 
 .inner-header-title {
-  font-weight: 700;
   font-size: 60px;
   line-height: 78px;
 }
@@ -165,14 +156,12 @@ body {
 }
 
 .search-results-title {
-  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
 
 .housing-card-title {
-  font-weight: 700;
   font-size: 24px;
   line-height: 28px;
 }
