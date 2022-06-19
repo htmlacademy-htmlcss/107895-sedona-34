@@ -11,41 +11,44 @@
     <header class="main-header">
       <!-- Логотип -->
       <a class="navigation-logo" href="index.html">
-        <img src="images/header/logo.svg" alt="Логотип седоны">
+        <img src="images/header/logo.svg" width="139" height="70" alt="Логотип седоны">
       </a>
       <!-- Навигация -->
       <nav class="navigation">
         <!-- Меню -->
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Главная</a>
+            <a class="navigation-link navigation-link-сurrent" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-сurrent">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <!-- Пользовательское меню -->
-        <a class="navigation-link" href="#">
+      </nav>
+      <!-- Пользовательское меню -->
+      <div class="navigation-user">
+        <a class="navigation-link search" href="#">
           <span class="visually-hidden">Поиск</span>
         </a>
-        <a class="navigation-link" href="#">
-          <span class="visually-hidden">Мне понравилось</span>
+        <a class="navigation-link favorite" href="#">
+          <span class="visually-hidden">Избранное</span>
         </a>
         <a class="button" href="#">Хочу сюда!</a>
-      </nav>
+      </div>
     </header>
     <!-- Основное содержимое страницы -->
-    <main class="main-inner">
+    <main class="main-inner main-container">
+      <div class="page-container">
       <!-- Фильтры для выбора гостиницы -->
       <section class="catalog-filter">
         <div class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrums">
             <li class="breadcrums-item">
-              <a class="breadcrums-link" href="index.html">
+              <a class="breadcrums-link-home" href="index.html">
                 <span class="visually-hidden">Главная страница</span>
               </a>
             </li>
@@ -56,7 +59,7 @@
         </div>
         <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
           <!-- Фильтр выбора инфраструктуры -->
-          <fieldset class="catalog-filter-group">
+          <fieldset class="catalog-filter-infa">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
@@ -74,7 +77,7 @@
             </ul>
           </fieldset>
           <!-- Фильтр выбора типа жилья -->
-          <fieldset class="catalog-filter-group">
+          <fieldset class="catalog-filter-type">
             <legend class="catalog-filter-title">Тип жилья:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
@@ -92,11 +95,11 @@
             </ul>
           </fieldset>
           <!-- Фильтр выбора стоимости -->
-          <fieldset class="catalog-filter-group">
+          <fieldset class="catalog-filter-price">
             <legend class="catalog-filter-title">Стоимость, ₽:</legend>
             <div class="catalog-filter-slider"></div>
-            <input class="catalog-filter-price" type="text" placeholder="0">
-            <input class="catalog-filter-price" type="text" placeholder="9000">
+            <input class="catalog-filter-placeholder-price" type="text" placeholder="0">
+            <input class="catalog-filter-placeholder-price" type="text" placeholder="9000">
           </fieldset>
           <button class="button" type="submit">Применить</button>
           <button class="button button-reset" type="reset">Сбросить</button>
@@ -210,22 +213,23 @@
           <button class="button" type="submit">Подписаться</button>
         </form>
       </section>
+    </div>
     </main>
     <!-- Подвал сайта -->
     <footer class="main-footer">
       <!-- Социальные сети -->
       <ul class="footer-social-list">
-        <li class="footer-social-item">
+        <li class="footer-social-item vk">
           <a class="button" href="#">
             <span class="visually-hidden">ВКонтакте</span>
           </a>
         </li>
-        <li class="footer-social-item">
+        <li class="footer-social-item telegram">
           <a class="button" href="#">
             <span class="visually-hidden">Telegram</span>
           </a>
         </li>
-        <li class="footer-social-item">
+        <li class="footer-social-item youtube">
           <a class="button" href="#">
             <span class="visually-hidden">YouTube</span>
           </a>
