@@ -32,6 +32,11 @@ body {
   color: #000000;
 }
 
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 /* Кнопка */
 .button {
   background: #756157;
@@ -48,8 +53,6 @@ body {
 /* Навигация */
 .main-header {
   display: flex;
-  width: 1200px;
-  margin: 0 auto;
   box-sizing: border-box;
   padding-left: 70px;
   padding-right: 70px;
@@ -59,10 +62,6 @@ body {
   margin-right: 30px;
 }
 
-.navigation {
-  width: 390px;
-}
-
 .navigation-list {
   margin: 0;
   padding: 0;
@@ -70,7 +69,6 @@ body {
 }
 
 .navigation-user {
-  max-width: 264px;
   margin-left: auto
 }
 
@@ -93,11 +91,6 @@ body {
 
 .main-container {
   flex-grow: 1;
-}
-
-.page-container {
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .hero-container {
@@ -131,10 +124,6 @@ body {
   padding: 0;
   text-align: center;
   list-style: none;
-}
-
-.advantages-item {
-  width: 400px;
 }
 
 .advantages-item-dark-blue {
@@ -225,18 +214,15 @@ body {
 }
 
 .catalog-filter-infa {
-  width: 150px;
   margin-right: 70px;
 }
 
 .catalog-filter-type {
-  width: 150px;
   margin-right: 175px;
 }
 
 .catalog-filter-price {
-  width: 190px;
-  margin-right: 70px
+  margin-left: auto;
 }
 
 .inner-header-title {
@@ -271,7 +257,6 @@ body {
 }
 
 .housing-card {
-  width: 340px;
   margin-right: 18px;
   list-style: none;
 }
@@ -311,22 +296,18 @@ body {
 /* Подвал сайта */
 .main-footer {
   display: flex;
-  width: 1200px;
-  margin: 0 auto;
   box-sizing: border-box;
   padding-left: 70px;
   padding-right: 70px;
 }
 
 .footer-social-list {
-  width: 142px;
   margin: 0 41.5px 0 0;
   padding: 0;
   list-style: none;
 }
 
 .footer-contacts-phone {
-  width: 720px;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
