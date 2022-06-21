@@ -1,5 +1,4 @@
 /* Подключение шрифтов */
-
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -16,6 +15,28 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
+/* Стили для всей страницы */
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  background: #ffffff;
+  color: #000000;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 /* Кнопка */
 .button {
   background: #756157;
@@ -29,20 +50,36 @@
   text-align: center;
 }
 
-/* Стили для всей страницы */
-body {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 22px;
-  line-height: 26px;
-}
-
-/* Шапка сайта */
-.main-header {
-  background: #ffffff;
-  color: #000000;
-}
-
 /* Навигация */
+.main-header {
+  display: flex;
+  box-sizing: border-box;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.navigation-logo {
+  margin-right: 30px;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation-user {
+  margin-left: auto
+}
+
+.search {
+  background: url("../images/header/search.svg") no-repeat;
+}
+
+.favorite {
+  background: url("../images/header/favorite.svg") no-repeat;
+}
+
 .navigation-link {
   font-weight: 700;
   font-size: 20px;
@@ -52,17 +89,23 @@ body {
   text-decoration: none;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
 .hero-container {
   background-color:#81b3d3;
-  color: #000000;
-  background-image: url("../images/hero-background.jpg");
-  background-repeat: no-repeat;
+  background: url("../images/hero-background.jpg") no-repeat;
   background-size: 100% auto;
+}
+
+.hero-logo {
+  display: block;
+  margin: 0 auto;
 }
 
 /* Преимущества */
 .advantages-title {
-  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
@@ -70,32 +113,48 @@ body {
 }
 
 .advantages-description {
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
   text-align: center;
   color: #333333;
 }
 
 .advantages-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0;
+  padding: 0;
   text-align: center;
+  list-style: none;
+}
+
+.advantages-item-img {
+  grid-column: span 2;
+}
+
+.advantages-item-dark-blue {
+  background-color: #81b3d3;
+  color: #ffffff;
+}
+
+.advantages-item-blue {
+  background-color: #83B3D333;
+}
+
+.advantages-item-light-blue {
+  background-color: #83B3D31F;
 }
 
 .advantages-item-title {
-  font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
 }
 
 .advantages-item-number {
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
 }
 
 .advantages-item-description {
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
@@ -107,23 +166,18 @@ body {
 }
 
 .hotel-search-title {
-  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
 
 .hotel-search-description {
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
   color: #333333;
 }
 
 /* Подписка */
 .subscribe {
-  background-image: url("../images/subscribe-background.jpg");
-  background-repeat: no-repeat;
+  background: url("../images/subscribe-background.jpg") no-repeat;
   background-size: 100% auto;
   text-align: center;
   color: #ffffff;
@@ -131,42 +185,19 @@ body {
 }
 
 .subscribe-title {
-  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
 
-.subscribe-description {
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
-}
-
 /* Фильтры для выбора гостиницы */
 .catalog-filter {
+  box-sizing: border-box;
+  padding: 35px 70px 70px 70px;
   color: #ffffff;
-  background-image: url("../images/catalog/catalog-filter-background.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
   background-color:#81b3d3;
-}
-
-.inner-header-title {
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 78px;
-}
-
-.breadcrums-item:first-child {
-  background-image: url("../images/catalog/home.svg");
-  background-repeat: no-repeat;
-}
-
-.breadcrums-item:last-child {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
+  background: url("../images/catalog/catalog-filter-background.jpg") no-repeat;
+  background-size: 100% auto;
 }
 
 .catalog-filter-title {
@@ -177,40 +208,80 @@ body {
 }
 
 .catalog-filter-item {
-  font-weight: 400;
   font-size: 18px;
+  line-height: 21px;
+  list-style: none;
+}
+
+.catalog-filter-form {
+ display: flex;
+}
+
+.catalog-filter-infa {
+  margin-right: 70px;
+}
+
+.catalog-filter-type {
+  margin-right: 175px;
+}
+
+.catalog-filter-price {
+  margin-left: auto;
+}
+
+.inner-header-title {
+  font-size: 60px;
+  line-height: 78px;
+  margin: 0;
+}
+
+.breadcrums {
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrums-item-home {
+  background: url("../images/catalog/home.svg")  no-repeat;
+}
+
+.breadcrums-item {
+  font-size: 16px;
   line-height: 21px;
 }
 
 .search-results-title {
-  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
 
+.housing-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.housing-card {
+  margin-right: 18px;
+  list-style: none;
+}
 .housing-card-title {
-  font-weight: 700;
   font-size: 24px;
   line-height: 28px;
 }
 
 .housing-type {
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
 }
 
 .housing-card-price {
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
 }
 
 .housing-card-rating {
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -218,28 +289,42 @@ body {
 }
 
 .select-control-container p {
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
 }
 
 .subscribe-catalog {
   text-align: center;
-  color: #000000;
 }
 
 /* Подвал сайта */
+.main-footer {
+  display: flex;
+  box-sizing: border-box;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.footer-social-list {
+  margin: 0 41.5px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
 .footer-contacts-phone {
-  font-weight: 400;
+  margin-left: auto;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
   text-decoration: none;
+  color: inherit;
 }
 
-/* Скрытие элементов */
+.htmlacademy-link {
+  margin-left: auto;
+}
+
 .visually-hidden {
   position: fixed;
   transform: scale(0);
