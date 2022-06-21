@@ -118,12 +118,16 @@ body {
 }
 
 .advantages-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   margin: 0;
   padding: 0;
   text-align: center;
   list-style: none;
+}
+
+.advantages-item-img {
+  grid-column: span 2;
 }
 
 .advantages-item-dark-blue {
