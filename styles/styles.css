@@ -443,6 +443,10 @@ body {
   height: 40px;
 }
 
+.footer-social-item .button {
+  background-color: #FFFFFF
+}
+
 .footer-contacts-phone {
   margin-left: auto;
   font-size: 40px;
