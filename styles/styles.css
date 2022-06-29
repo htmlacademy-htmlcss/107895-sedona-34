@@ -177,6 +177,10 @@ body {
   text-transform: uppercase;
 }
 
+.advantages-item svg {
+  margin-bottom: 30px;
+}
+
 .advantages-item-number {
   display: block;
   margin: 0;
