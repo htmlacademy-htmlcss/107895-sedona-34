@@ -189,6 +189,11 @@ body {
   color: #333333;
 }
 
+.advantages-item-dark-blue .advantages-item-description {
+  color: #ffffff;
+}
+
+
 /* Поиск гостиницы */
 .hotel-search {
   text-align: center;
