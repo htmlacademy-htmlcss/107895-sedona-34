@@ -60,19 +60,24 @@ body {
 
 .navigation-logo {
   margin-right: 30px;
+  position: relative;
+  width: 139px;
+}
+
+.navigation-logo img {
+  position: absolute;
 }
 
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding: 0;
   list-style: none;
 }
 
 .navigation-link {
   display: block;
-  padding: 17px 20px;
+  padding: 20px 17px;
   font-weight: 700;
   font-size: 20px;
   color: inherit;
@@ -84,11 +89,6 @@ body {
 .navigation-user {
   display: flex;
   margin-left: auto
-}
-
-.navigation-user .navigation-link {
-  min-width: 18px;
-  min-height: 18px;
 }
 
 .search {
@@ -153,6 +153,7 @@ body {
 
 .advantages-item-img {
   grid-column: span 2;
+  display: flex;
 }
 
 .advantages-item-dark-blue {
