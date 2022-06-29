@@ -211,6 +211,11 @@ body {
   color: #333333;
 }
 
+.hotel-search .button {
+  width: 574px;
+  height: 60px;
+}
+
 /* Подписка */
 .subscribe {
   margin-top: 93px;
