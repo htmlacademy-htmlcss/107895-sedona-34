@@ -375,8 +375,7 @@ body {
 }
 
 .pagination-link {
-  display: block;
-  box-sizing: border-box;
+  display: flex;
   width: 60px;
   height: 60px;
   text-decoration: none;
@@ -385,8 +384,9 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  padding: 12px 24px;
   border-radius: 4px;
+  justify-content: center;
+  align-items: center;
 }
 
 .pagination-current {
