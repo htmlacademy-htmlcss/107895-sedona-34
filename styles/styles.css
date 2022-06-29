@@ -72,10 +72,11 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+  padding: 0;
   list-style: none;
 }
 
-.navigation-link {
+.navigation-list .navigation-link {
   display: block;
   padding: 20px 17px;
   font-weight: 700;
@@ -91,12 +92,8 @@ body {
   margin-left: auto
 }
 
-.search {
-  background: url("../images/header/search.svg") no-repeat;
-}
-
-.favorite {
-  background: url("../images/header/favorite.svg") no-repeat;
+.navigation-user .navigation-link {
+  padding: 20px 12px;
 }
 
 .navigation-user .button {
