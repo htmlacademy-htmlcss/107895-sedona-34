@@ -100,8 +100,8 @@ body {
   box-sizing: border-box;
   margin-top: 14px;
   padding: 9px 15px;
-  width: 160px;
-  height: 37px;
+  min-width: 160px;
+  min-height: 37px;
 }
 
 .main-container {
@@ -314,7 +314,7 @@ body {
   margin-left: auto;
 }
 
-.inner-header-title {
+.inner-container-title {
   font-size: 60px;
   line-height: 78px;
   margin: 0;
