@@ -48,6 +48,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
+  border: none;
 }
 
 /* Навигация */
@@ -101,7 +102,7 @@ body {
   margin-top: 14px;
   padding: 9px 15px;
   min-width: 160px;
-  min-height: 37px;
+  height: 37px;
 }
 
 .main-container {
@@ -236,6 +237,10 @@ body {
   background-color: #81B3D3;
 }
 
+.subscribe-catalog {
+  text-align: center;
+}
+
 .subscribe-title {
   margin: 0;
   padding-top: 94px;
@@ -252,9 +257,33 @@ body {
 }
 
 .subscribe-form {
+  display: flex;
+  justify-content: center;
   margin: 0;
   padding-top: 46px;
   padding-bottom: 94px;
+}
+
+.subscribe-form input {
+  box-sizing: border-box;
+  width: 600px;
+  height: 60px;
+  padding: 0;
+  background: #F2F2F2;
+  border-radius: 10px 0 0 10px;
+  border: none;
+  font-size: 18px;
+  line-height: 21px;
+  padding-left: 24px;
+}
+
+.subscribe-form .button {
+  margin: 0;
+  background: #82B3D3;
+  width: 200px;
+  height: 60px;
+  padding: 0;
+  border-radius: 0 10px 10px 0;
 }
 
 /* Фильтры для выбора гостиницы */
@@ -276,6 +305,7 @@ body {
   text-transform: capitalize;
 }
 
+/* Хлебные крошки */
 .breadcrums {
   margin: 0;
   padding: 0;
@@ -374,8 +404,10 @@ body {
   text-transform: uppercase;
 }
 
+/* Пагинация */
 .pagination-container {
   display: flex;
+  margin-bottom: 25px;
 }
 
 .pagination {
@@ -417,10 +449,6 @@ body {
 .select-control-container p {
   font-size: 18px;
   line-height: 21px;
-}
-
-.subscribe-catalog {
-  text-align: center;
 }
 
 /* Подвал сайта */
