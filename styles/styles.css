@@ -100,9 +100,10 @@ body {
 .navigation-user .button {
   box-sizing: border-box;
   margin-top: 14px;
+  margin-bottom: 14px;
   padding: 9px 15px;
   min-width: 160px;
-  height: 37px;
+  min-height: 37px;
 }
 
 .main-container {
