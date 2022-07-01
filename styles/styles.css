@@ -403,6 +403,21 @@ body {
   text-transform: uppercase;
 }
 
+.housing-card .button {
+  box-sizing: border-box;
+  padding: 8px 15px;
+  min-width: 140px;
+  min-height: 37px;
+}
+
+.housing-card .button-blue {
+  background-color: #82B3D3;
+}
+
+.housing-card .button-сurrent {
+  background-color: #7DB54F;
+}
+
 /* Пагинация */
 .pagination-container {
   display: flex;
