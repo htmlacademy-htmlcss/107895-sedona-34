@@ -79,7 +79,7 @@ body {
 
 .navigation-list .navigation-link {
   display: block;
-  padding: 20px 0 20px 0;
+  padding: 20px 0 18px 0;
   margin: 0 17px 0 17px;
   font-weight: 700;
   font-size: 20px;
@@ -117,9 +117,11 @@ body {
 
 .hero-container {
   background-color: #81B3D3;
-  background: url("../images/hero-background.jpg") no-repeat;
-  background-size: 100% auto;
+  background: url("../images/hero-background-divider.svg") no-repeat, url("../images/hero-background.jpg") no-repeat;
+  background-size: contain, auto;
+  background-position: bottom, top;
 }
+
 
 .hero-logo {
   padding-top: 51px;
@@ -359,9 +361,11 @@ body {
   display: flex;
   padding-left: 70px;
   padding-right: 70px;
+  margin-bottom: 56px;
 }
 
 .search-results-title {
+  margin: 0;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
@@ -404,21 +408,38 @@ body {
 }
 
 .housing-list {
-  display: flex;
-  flex-wrap: wrap;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-bottom: 30px;
+  padding: 0 0 66px 0;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  justify-content: space-around;
+  column-gap: 18px;
+  border-bottom: 1px solid #E6E6E6;
 }
 
 .housing-card {
-  margin-right: 18px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
   list-style: none;
 }
 
+.housing-card img {
+  display: flex;
+  padding-bottom: 16px;
+}
+
 .housing-card-title {
+  margin: 0;
   font-size: 24px;
   line-height: 28px;
+  padding-bottom: 16px;
 }
 
 .housing-type {
+  margin: 0;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
@@ -431,10 +452,15 @@ body {
 }
 
 .housing-card-rating {
+  margin: 0;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+  width: 140px;
+  height: 37px;
+  background: #F2F2F2;
+  border-radius: 4px;
 }
 
 .housing-card .button {
@@ -456,6 +482,8 @@ body {
 .pagination-container {
   display: flex;
   margin-bottom: 25px;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 
 .pagination {
