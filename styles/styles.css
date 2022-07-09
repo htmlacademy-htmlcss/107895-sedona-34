@@ -420,10 +420,15 @@ body {
 }
 
 .housing-card {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
+  padding: 20px 20px 0 20px;
   list-style: none;
+}
+
+.housing-card-content {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  column-gap: 16px;
+  row-gap: 20px;
 }
 
 .housing-card img {
@@ -446,12 +451,16 @@ body {
 }
 
 .housing-card-price {
+  margin: 0;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
 }
 
 .housing-card-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   font-size: 16px;
   line-height: 20px;
@@ -464,8 +473,9 @@ body {
 }
 
 .housing-card .button {
-  box-sizing: border-box;
-  padding: 8px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: 140px;
   min-height: 37px;
 }
