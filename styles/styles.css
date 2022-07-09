@@ -457,6 +457,24 @@ body {
   color: #333333;
 }
 
+.housing-card-star-2 {
+  background-image: url(../images/catalog/star.svg), url(../images/catalog/star.svg);
+  background-repeat: no-repeat;
+  background-position: 0 10px, 24px 10px;
+}
+
+.housing-card-star-3 {
+  background-image: url(../images/catalog/star.svg), url(../images/catalog/star.svg), url(../images/catalog/star.svg);
+  background-repeat: no-repeat;
+  background-position: 0 10px, 24px 10px, 48px 10px, 72px 10px;
+}
+
+.housing-card-star-4 {
+  background-image: url(../images/catalog/star.svg), url(../images/catalog/star.svg), url(../images/catalog/star.svg), url(../images/catalog/star.svg);
+  background-repeat: no-repeat;
+  background-position: 0 10px, 24px 10px, 48px 10px, 72px 10px;
+}
+
 .housing-card-rating {
   display: flex;
   justify-content: center;
