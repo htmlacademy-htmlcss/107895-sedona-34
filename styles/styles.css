@@ -529,10 +529,12 @@ body {
 
 .select-control-container {
   display: flex;
+  align-items: center;
   margin-left: auto;
 }
 
 .select-control-container .select-control {
+  margin: 0;
   font-size: 18px;
   line-height: 21px;
   box-sizing: border-box;
