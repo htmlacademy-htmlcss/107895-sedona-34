@@ -183,11 +183,10 @@ body {
 }
 
 /* Счетчик избранных в правой части навигации */
-.navigation-user .favorite::after {
+.navigation-user .favorite {
   display: flex;
   justify-content: center;
   align-items: center;
-  content: "12";
   font-size: 10px;
   line-height: 13px;
   color: #FFFFFF;
@@ -745,15 +744,15 @@ body {
   min-height: 50px;
 }
 
-.footer-social-item .button:hover .footer-social-icon {
+.button:hover .footer-social-icon {
   fill: #68A2CA;
 }
 
-.footer-social-item .button:focus .footer-social-icon {
+.button:focus .footer-social-icon {
   fill: #68A2CA;
 }
 
-.footer-social-item .button:active .footer-social-icon {
+.button:active .footer-social-icon {
   fill: #68A2CA4D;
 }
 
