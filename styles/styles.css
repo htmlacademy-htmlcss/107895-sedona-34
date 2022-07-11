@@ -37,7 +37,7 @@ body {
   margin: 0 auto;
 }
 
-/* Кнопка */
+/* Основной стиль для всех кнопок */
 .button {
   background: #756157;
   border-radius: 4px;
@@ -59,16 +59,19 @@ body {
   padding-right: 70px;
 }
 
+/* Логотив в навигации */
 .navigation-logo {
   margin-right: 30px;
   position: relative;
   width: 139px;
 }
 
+/* Картинка логотипа в навигации */
 .navigation-logo img {
   position: absolute;
 }
 
+/* Левая часть навигации */
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
@@ -77,9 +80,11 @@ body {
   list-style: none;
 }
 
+/* Пункты в левой части навигации */
 .navigation-list .navigation-link {
   display: block;
-  padding: 20px 17px;
+  padding: 20px 0 18px 0;
+  margin: 0 17px 0 17px;
   font-weight: 700;
   font-size: 20px;
   color: inherit;
@@ -88,33 +93,58 @@ body {
   text-decoration: none;
 }
 
+/* Активный пункт в левой части навигации */
+.navigation-list .navigation-link-сurrent {
+  border-bottom: 2px solid #756257;
+}
+
+/* Правая часть навигации */
 .navigation-user {
   display: flex;
   margin-left: auto
 }
 
-.navigation-user .navigation-link {
-  padding: 20px 12px;
+/* Иконки в правой части навигации */
+.navigation-user .navigation-icon {
+  position: relative;
+  min-width: 42px;
+  min-height: 66px;
 }
 
+/* Позиционирование иконок в правой части навигации */
+.navigation-user .navigation-icon svg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+/* Кнопка в правой части навигации */
 .navigation-user .button {
   box-sizing: border-box;
   margin-top: 14px;
+  margin-bottom: 14px;
   padding: 9px 15px;
   min-width: 160px;
-  height: 37px;
+  min-height: 37px;
 }
 
 .main-container {
   flex-grow: 1;
 }
 
+/* Приветствие */
 .hero-container {
   background-color: #81B3D3;
-  background: url("../images/hero-background.jpg") no-repeat;
-  background-size: 100% auto;
+  background: url("../images/hero-background-divider.svg"), url("../images/hero-background.jpg");
+  background-repeat: no-repeat;
+  background-size: contain, auto;
+  background-position: bottom, top;
 }
 
+/* Логотип приветствия */
 .hero-logo {
   padding-top: 51px;
   padding-bottom: 82px;
@@ -122,7 +152,7 @@ body {
   margin: 0 auto;
 }
 
-/* Преимущества */
+/* Заголовок преимуществ */
 .advantages-title {
   margin-top: 63px;
   font-size: 30px;
@@ -131,6 +161,7 @@ body {
   text-transform: uppercase;
 }
 
+/* Описание преимуществ */
 .advantages-description {
   margin-top: 31px;
   margin-bottom: 90px;
@@ -138,6 +169,7 @@ body {
   color: #333333;
 }
 
+/* Карточки преимущества */
 .advantages-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -147,11 +179,13 @@ body {
   list-style: none;
 }
 
+/* Карточка преимущества */
 .advantages-item {
   margin: 0;
   padding: 92px 85px;
 }
 
+/* Карточка в преимуществах */
 .advantages-item-img {
   grid-column: span 2;
   display: flex;
@@ -170,6 +204,7 @@ body {
   background-color: #83B3D31F;
 }
 
+/* Заголовок преимущества */
 .advantages-item-title {
   margin: 0;
   margin-bottom: 30px;
@@ -178,10 +213,12 @@ body {
   text-transform: uppercase;
 }
 
+/* Иконка внутри карточки преимущества */
 .advantages-item svg {
   margin-bottom: 30px;
 }
 
+/* Порядковый номер преимущества */
 .advantages-item-number {
   display: block;
   margin: 0;
@@ -190,6 +227,7 @@ body {
   line-height: 21px;
 }
 
+/* Описание преимущества */
 .advantages-item-description {
   margin: 0;
   font-size: 18px;
@@ -201,12 +239,12 @@ body {
   color: #ffffff;
 }
 
-
-/* Поиск гостиницы */
+/* Поиск гостиниц */
 .hotel-search {
   text-align: center;
 }
 
+/* Заголовок поиска гостиниц */
 .hotel-search-title {
   margin: 0;
   margin-top: 91px;
@@ -215,6 +253,7 @@ body {
   text-transform: uppercase;
 }
 
+/* Описание поиска гостиниц */
 .hotel-search-description {
   margin: 0;
   margin-top: 29px;
@@ -222,6 +261,7 @@ body {
   color: #333333;
 }
 
+/* Кнопка поиска гостиниц */
 .hotel-search .button {
   width: 574px;
   height: 60px;
@@ -257,17 +297,17 @@ body {
 }
 
 .subscribe-form {
-  display: flex;
-  justify-content: center;
-  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  max-width: 800px;
+  height: 60px;
+  margin-left: 200px;
   padding-top: 46px;
   padding-bottom: 94px;
 }
 
 .subscribe-form input {
   box-sizing: border-box;
-  width: 600px;
-  height: 60px;
   padding: 0;
   background: #F2F2F2;
   border-radius: 10px 0 0 10px;
@@ -280,8 +320,6 @@ body {
 .subscribe-form .button {
   margin: 0;
   background: #82B3D3;
-  width: 200px;
-  height: 60px;
   padding: 0;
   border-radius: 0 10px 10px 0;
 }
@@ -350,64 +388,178 @@ body {
   margin: 0;
 }
 
+/* Сортировка карточек */
 .sorting-container {
+  align-items: center;
   display: flex;
-}
-
-.display-type {
-  display: flex;
-  list-style-type: none;
-}
-
-.display-type .button {
-  width: 48px;
-  height: 48px;
+  padding: 0 70px;
+  margin-bottom: 56px;
 }
 
 .search-results-title {
+  margin: 0;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
 
-.housing-list {
-  display: flex;
-  flex-wrap: wrap;
+.search-results .select-control {
+  margin-left: auto;
+  margin-right: 78px;
+  font-size: 18px;
+  line-height: 21px;
+  box-sizing: border-box;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  padding-left: 20px;
+  width: 290px;
+  height: 50px;
+  appearance: none;
+  background-image: url("../images/catalog/arrow-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px top 20px;
 }
 
+.display-type {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+}
+
+.display-type-item .button {
+  background-color: #FFFFFF;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  width: 48px;
+  height: 48px;
+}
+
+.display-type-item .button-сurrent {
+  border: 2px solid #000000;
+}
+
+.display-type-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+/* Карточки жилья */
+.housing-list {
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-bottom: 30px;
+  padding: 0 0 66px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 18px;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+/* Карточка жилья */
 .housing-card {
-  margin-right: 18px;
+  padding: 20px 20px 0 20px;
   list-style: none;
 }
 
+.housing-card-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 16px;
+  row-gap: 20px;
+}
+
+/* Изображение в карточке жилья */
+.housing-card img {
+  display: flex;
+  padding-bottom: 16px;
+}
+
+/* Название в карточке жилья */
 .housing-card-title {
+  margin: 0;
   font-size: 24px;
   line-height: 28px;
+  padding-bottom: 16px;
 }
 
+/* Тип в карточке жилья */
 .housing-type {
+  margin: 0;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
 }
 
+/* Стоимость в карточке жилья */
 .housing-card-price {
+  margin: 0;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
 }
 
+/* Звездочки рейтинга в карточке жилья
+   2 Звезды                         */
+.housing-card-star-2 {
+  background-image: url("../images/catalog/star.svg"), url("../images/catalog/star.svg");
+  background-repeat: no-repeat;
+  background-position: 0 10px, 24px 10px;
+}
+
+/* 3 Звезды */
+.housing-card-star-3 {
+  background-image: url("../images/catalog/star.svg"), url("../images/catalog/star.svg"), url("../images/catalog/star.svg");
+  background-repeat: no-repeat;
+  background-position: 0 10px, 24px 10px, 48px 10px, 72px 10px;
+}
+
+/* 4 Звезды */
+.housing-card-star-4 {
+  background-image: url("../images/catalog/star.svg"), url("../images/catalog/star.svg"), url("../images/catalog/star.svg"), url("../images/catalog/star.svg");
+  background-repeat: no-repeat;
+  background-position: 0 10px, 24px 10px, 48px 10px, 72px 10px;
+}
+
+/* Рейтинг в карточке жилья */
 .housing-card-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+  min-width: 140px;
+  min-height: 37px;
+  background: #F2F2F2;
+  border-radius: 4px;
+}
+
+/* Кнопки в карточке жилья */
+.housing-card .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 140px;
+  min-height: 37px;
+}
+
+/* Кнопка "В Избранное" в карточке жилья */
+.housing-card .button-blue {
+  background-color: #82B3D3;
+}
+
+/* Активная кнопка в карточке жилья */
+.housing-card .button-сurrent {
+  background-color: #7DB54F;
 }
 
 /* Пагинация */
 .pagination-container {
   display: flex;
   margin-bottom: 25px;
+  margin: 0 70px;
 }
 
 .pagination {
@@ -443,12 +595,30 @@ body {
 
 .select-control-container {
   display: flex;
+  align-items: center;
   margin-left: auto;
+}
+
+.select-control-container .select-control {
+  margin: 0;
+  font-size: 18px;
+  line-height: 21px;
+  box-sizing: border-box;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  padding-left: 20px;
+  width: 160px;
+  height: 50px;
+  appearance: none;
+  background-image: url("../images/catalog/arrow-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px top 20px;
 }
 
 .select-control-container p {
   font-size: 18px;
   line-height: 21px;
+  margin-right: 50px;
 }
 
 /* Подвал сайта */
