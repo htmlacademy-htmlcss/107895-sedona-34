@@ -51,6 +51,67 @@ body {
   border: none;
 }
 
+/* Наведение */
+.button:hover,
+.button:focus {
+  background: #615048;
+}
+
+/* Нажатие */
+.button:active {
+  color: #FFFFFF4D;
+}
+
+/* Неактивна */
+.button:disabled {
+  background: #E5E5E5;
+}
+
+/* Синяя кнопка*/
+
+.button-blue {
+  background-color: #82B3D3;
+}
+
+/* Наведение */
+.button-blue:hover,
+.button-blue:focus {
+  background: #68A2CA;
+}
+
+/* Нажатие */
+.button-blue:active {
+  color: #FFFFFF4D;
+}
+
+/* Неактивна */
+.button-blue:disabled {
+  background: #E5E5E5;
+}
+
+/* Зеленая кнопка */
+
+.button-green {
+  background-color: #7DB54F;
+}
+
+/* Наведение */
+/* Фокус (браузерный) */
+.button-green:hover,
+.button-green:focus {
+  background: #6C9E42;
+}
+
+/* Нажатие */
+.button-green:active {
+  color: #FFFFFF4D;
+}
+
+/* Неактивна */
+.button-green:disabled {
+  background: #E5E5E5;
+}
+
 /* Навигация */
 .main-header {
   display: flex;
@@ -126,6 +187,7 @@ body {
   box-sizing: border-box;
   margin-top: 14px;
   margin-bottom: 14px;
+  margin-left: 20px;
   padding: 9px 15px;
   min-width: 160px;
   min-height: 37px;
@@ -319,7 +381,6 @@ body {
 
 .subscribe-form .button {
   margin: 0;
-  background: #82B3D3;
   padding: 0;
   border-radius: 0 10px 10px 0;
 }
@@ -349,15 +410,22 @@ body {
   padding: 0;
   display: flex;
   list-style-type: none;
-}
-
-.breadcrums-item-home {
-  background: url("../images/catalog/home.svg") no-repeat;
+  gap: 10px;
 }
 
 .breadcrums-item {
+  display: flex;
+  align-items: center;
   font-size: 16px;
   line-height: 21px;
+}
+
+.breadcrums-item:hover,
+.breadcrums-item:hover .breadcrums-item-icon,
+.breadcrums-item :active,
+.breadcrums-item:active .breadcrums-item-icon {
+  color: #FFFFFF99;
+  fill: #FFFFFF99;
 }
 
 .catalog-filter-item {
@@ -433,6 +501,18 @@ body {
   border-radius: 4px;
   width: 48px;
   height: 48px;
+}
+
+.display-type-item .button:hover {
+  border: 2px solid #000000;
+}
+
+.display-type-item .button:focus {
+  border: 2px solid #68A2CA;
+}
+
+.display-type-item .button:active {
+  border: 2px solid #000000;
 }
 
 .display-type-item .button-сurrent {
@@ -545,16 +625,6 @@ body {
   min-height: 37px;
 }
 
-/* Кнопка "В Избранное" в карточке жилья */
-.housing-card .button-blue {
-  background-color: #82B3D3;
-}
-
-/* Активная кнопка в карточке жилья */
-.housing-card .button-сurrent {
-  background-color: #7DB54F;
-}
-
 /* Пагинация */
 .pagination-container {
   display: flex;
@@ -615,6 +685,18 @@ body {
   background-position: right 20px top 20px;
 }
 
+/* Наведение */
+/* Фокус (браузерный) */
+.select-control:hover,
+.select-control:focus {
+  border: 2px solid #68A2CA;
+}
+
+/* Нажатие */
+.select-control:active {
+  border: 2px solid #3F5E72;
+}
+
 .select-control-container p {
   font-size: 18px;
   line-height: 21px;
@@ -641,18 +723,42 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 47px;
-  height: 50px;
+  min-width: 47px;
+  min-height: 50px;
+}
+
+.footer-social-item .button:hover .footer-social-icon {
+  fill: #68A2CA;
+}
+
+.footer-social-item .button:focus .footer-social-icon {
+  fill: #68A2CA;
+}
+
+.footer-social-item .button:active .footer-social-icon {
+  fill: #68A2CA4D;
 }
 
 .footer-contacts-phone {
+  display: flex;
   margin-left: auto;
+  justify-content: center;
+  align-items: center;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   color: inherit;
+}
+
+.footer-contacts-phone:hover,
+.footer-contacts-phone:focus {
+  color: #756157;
+}
+
+.footer-contacts-phone:active {
+  color: #7561574D;
 }
 
 .htmlacademy-link {
@@ -662,6 +768,15 @@ body {
   align-items: center;
   width: 115px;
   height: 50px;
+}
+
+.htmlacademy-link:hover .htmlacademy-link-icon,
+.htmlacademy-link:focus .htmlacademy-link-icon {
+  fill: #756157;
+}
+
+.htmlacademy-link:active .htmlacademy-link-icon {
+  fill: #7561574D;
 }
 
 .visually-hidden {
