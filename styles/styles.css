@@ -380,8 +380,7 @@ body {
 .sorting-container {
   align-items: center;
   display: flex;
-  padding-left: 70px;
-  padding-right: 70px;
+  padding: 0 70px;
   margin-bottom: 56px;
 }
 
@@ -439,8 +438,7 @@ body {
   margin-bottom: 30px;
   padding: 0 0 66px 0;
   display: grid;
-  grid-template-columns: 340px 340px 340px;
-  justify-content: space-around;
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 18px;
   border-bottom: 1px solid #E6E6E6;
 }
@@ -453,7 +451,7 @@ body {
 
 .housing-card-content {
   display: grid;
-  grid-template-columns: 140px 140px;
+  grid-template-columns: repeat(2, 1fr);
   column-gap: 16px;
   row-gap: 20px;
 }
@@ -520,8 +518,8 @@ body {
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  width: 140px;
-  height: 37px;
+  min-width: 140px;
+  min-height: 37px;
   background: #F2F2F2;
   border-radius: 4px;
 }
@@ -549,8 +547,7 @@ body {
 .pagination-container {
   display: flex;
   margin-bottom: 25px;
-  margin-left: 70px;
-  margin-right: 70px;
+  margin: 0 70px;
 }
 
 .pagination {
