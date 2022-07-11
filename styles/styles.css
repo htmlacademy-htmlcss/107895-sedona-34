@@ -105,8 +105,20 @@ body {
 }
 
 /* Иконки в правой части навигации */
-.navigation-user .navigation-link {
-  padding: 20px 12px;
+.navigation-user .navigation-icon {
+  position: relative;
+  min-width: 42px;
+  min-height: 66px;
+}
+
+/* Позиционирование иконок в правой части навигации */
+.navigation-user .navigation-icon svg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
 }
 
 /* Кнопка в правой части навигации */
