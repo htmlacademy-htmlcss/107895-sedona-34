@@ -449,12 +449,74 @@ body {
   list-style: none;
 }
 
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.catalog-filter-item .control {
+  position: relative;
+  display: block;
+  padding-left: 40px;
+}
+
+.catalog-filter-infa .control-mark {
+  box-sizing: border-box;
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  border-radius: 4px;
+}
+
+.control:hover .control-mark,
+.control:active .control-mark {
+  background: #FFFFFF99;
+}
+
+.control:focus .control-mark {
+  border: 3px solid #83B3D3;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  content: "";
+  background-image: url("../images/catalog/checked.svg");
+  width: 13px;
+  height: 10px;
+  top: 6px;
+  left: 4px;
+}
+
+.catalog-filter-type .control-mark {
+  box-sizing: border-box;
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #3F5E72;
+  border-radius: 50%;
+  top: 5px;
+  left: 5px;
+}
+
 .catalog-filter-form {
   display: flex;
 }
 
 .catalog-filter-form .catalog-filter-title {
-  margin: 0 0 34px 0;
+  margin: 0 0 30px 0;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -486,7 +548,7 @@ body {
 
 .range-wrapper-inputs {
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .wrapper-input-min {
@@ -547,7 +609,6 @@ body {
   position: relative;
   height: 4px;
   background-color: #FFFFFF4D;
-  margin-bottom: 8px;
 }
 
 .range-bar .range-toggle {
@@ -580,7 +641,7 @@ body {
 .catalog-filter-buttons .button-blue {
   width: 160px;
   height: 48px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .catalog-filter-buttons .button-reset {
