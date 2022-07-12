@@ -1,0 +1,882 @@
+/* Подключение шрифтов */
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+}
+
+/* Стили для всей страницы */
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  background: #FFFFFF;
+  color: #000000;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* Основной стиль для всех кнопок */
+.button {
+  background: #756157;
+  border-radius: 4px;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  border: none;
+}
+
+/* Наведение */
+.button:hover,
+.button:focus {
+  background: #615048;
+}
+
+/* Нажатие */
+.button:active {
+  color: #FFFFFF4D;
+}
+
+/* Неактивна */
+.button:disabled {
+  background: #E5E5E5;
+}
+
+/* Синяя кнопка*/
+
+.button-blue {
+  background-color: #82B3D3;
+}
+
+/* Наведение */
+.button-blue:hover,
+.button-blue:focus {
+  background: #68A2CA;
+}
+
+/* Нажатие */
+.button-blue:active {
+  color: #FFFFFF4D;
+}
+
+/* Неактивна */
+.button-blue:disabled {
+  background: #E5E5E5;
+}
+
+/* Зеленая кнопка */
+
+.button-green {
+  background-color: #7DB54F;
+}
+
+/* Наведение */
+/* Фокус (браузерный) */
+.button-green:hover,
+.button-green:focus {
+  background: #6C9E42;
+}
+
+/* Нажатие */
+.button-green:active {
+  color: #FFFFFF4D;
+}
+
+/* Неактивна */
+.button-green:disabled {
+  background: #E5E5E5;
+}
+
+/* Навигация */
+.main-header {
+  display: flex;
+  box-sizing: border-box;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+/* Логотив в навигации */
+.navigation-logo {
+  margin-right: 30px;
+  position: relative;
+  width: 139px;
+}
+
+/* Картинка логотипа в навигации */
+.navigation-logo img {
+  position: absolute;
+}
+
+/* Левая часть навигации */
+.navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Пункты в левой части навигации */
+.navigation-list .navigation-link {
+  display: block;
+  padding: 20px 0 18px 0;
+  margin: 0 17px 0 17px;
+  font-weight: 700;
+  font-size: 20px;
+  color: inherit;
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+/* Активный пункт в левой части навигации */
+.navigation-list .navigation-link-сurrent {
+  border-bottom: 2px solid #756257;
+}
+
+/* Правая часть навигации */
+.navigation-user {
+  display: flex;
+  margin-left: auto
+}
+
+/* Иконки в правой части навигации */
+.navigation-user .navigation-icon {
+  position: relative;
+  min-width: 42px;
+  min-height: 66px;
+}
+
+/* Позиционирование иконок в правой части навигации */
+.navigation-user .navigation-icon svg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+/* Счетчик избранных в правой части навигации */
+.navigation-user .favorite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  line-height: 13px;
+  color: #FFFFFF;
+  width: 20px;
+  height: 20px;
+  background-color: #7DB54F;
+  border-radius: 10px;
+  position: absolute;
+  left: 24px;
+  top: 15px;
+}
+
+/* Кнопка в правой части навигации */
+.navigation-user .button {
+  box-sizing: border-box;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  margin-left: 20px;
+  padding: 9px 15px;
+  min-width: 160px;
+  min-height: 37px;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+/* Приветствие */
+.hero-container {
+  background-color: #81B3D3;
+  background: url("../images/hero-background-divider.svg"), url("../images/hero-background.jpg");
+  background-repeat: no-repeat;
+  background-size: contain, auto;
+  background-position: bottom, top;
+}
+
+/* Логотип приветствия */
+.hero-logo {
+  padding-top: 51px;
+  padding-bottom: 82px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Заголовок преимуществ */
+.advantages-title {
+  margin-top: 63px;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Описание преимуществ */
+.advantages-description {
+  margin-top: 31px;
+  margin-bottom: 90px;
+  text-align: center;
+  color: #333333;
+}
+
+/* Карточки преимущества */
+.advantages-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style: none;
+}
+
+/* Карточка преимущества */
+.advantages-item {
+  margin: 0;
+  padding: 92px 85px;
+}
+
+/* Карточка в преимуществах */
+.advantages-item-img {
+  grid-column: span 2;
+  display: flex;
+}
+
+.advantages-item-dark-blue {
+  background-color: #81B3D3;
+  color: #ffffff;
+}
+
+.advantages-item-blue {
+  background-color: #83B3D333;
+}
+
+.advantages-item-light-blue {
+  background-color: #83B3D31F;
+}
+
+/* Заголовок преимущества */
+.advantages-item-title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+/* Иконка внутри карточки преимущества */
+.advantages-item svg {
+  margin-bottom: 30px;
+}
+
+/* Порядковый номер преимущества */
+.advantages-item-number {
+  display: block;
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+/* Описание преимущества */
+.advantages-item-description {
+  margin: 0;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.advantages-item-dark-blue .advantages-item-description {
+  color: #ffffff;
+}
+
+/* Поиск гостиниц */
+.hotel-search {
+  text-align: center;
+}
+
+/* Заголовок поиска гостиниц */
+.hotel-search-title {
+  margin: 0;
+  margin-top: 91px;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+/* Описание поиска гостиниц */
+.hotel-search-description {
+  margin: 0;
+  margin-top: 29px;
+  margin-bottom: 56px;
+  color: #333333;
+}
+
+/* Кнопка поиска гостиниц */
+.hotel-search .button {
+  width: 574px;
+  height: 60px;
+}
+
+/* Подписка */
+.subscribe {
+  margin-top: 93px;
+  background: url("../images/subscribe-background.jpg") no-repeat;
+  background-size: 100% auto;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #81B3D3;
+}
+
+.subscribe-catalog {
+  text-align: center;
+}
+
+.subscribe-title {
+  margin: 0;
+  padding-top: 94px;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.subscribe-description {
+  margin: 0;
+  padding-top: 29px;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.subscribe-form {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  max-width: 800px;
+  height: 60px;
+  margin-left: 200px;
+  padding-top: 46px;
+  padding-bottom: 94px;
+}
+
+.subscribe-form input {
+  box-sizing: border-box;
+  padding: 0;
+  background: #F2F2F2;
+  border-radius: 10px 0 0 10px;
+  border: none;
+  font-size: 18px;
+  line-height: 21px;
+  padding-left: 24px;
+}
+
+.subscribe-form .button {
+  margin: 0;
+  padding: 0;
+  border-radius: 0 10px 10px 0;
+}
+
+/* Фильтры для выбора гостиницы */
+.catalog-filter {
+  box-sizing: border-box;
+  padding: 35px 70px 70px 70px;
+  color: #FFFFFF;
+  background-color: #81B3D3;
+  background: url("../images/catalog/catalog-filter-background.jpg") no-repeat;
+  background-size: 100% auto;
+}
+
+.inner-container-title {
+  font-size: 60px;
+  line-height: 78px;
+  margin: 0 0 10px 0;
+}
+
+/* Хлебные крошки */
+.breadcrums {
+  margin: 0 0 40px 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  gap: 10px;
+}
+
+.breadcrums-item {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.breadcrums-item:hover,
+.breadcrums-item:hover .breadcrums-item-icon,
+.breadcrums-item :active,
+.breadcrums-item:active .breadcrums-item-icon {
+  color: #FFFFFF99;
+  fill: #FFFFFF99;
+}
+
+.catalog-filter-item {
+  font-size: 18px;
+  line-height: 21px;
+  list-style: none;
+}
+
+.catalog-filter-form {
+  display: flex;
+}
+
+.catalog-filter-form .catalog-filter-title {
+  margin: 0 0 30px 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: capitalize;
+}
+
+.catalog-filter-form .catalog-filter-list {
+  padding: 0;
+  margin: 0;
+}
+
+.catalog-filter-infa {
+  margin: 0 70px 0 0;
+  padding: 0;
+  border: none;
+}
+
+.catalog-filter-type {
+  padding: 0;
+  margin: 0 175px 0 0;
+  border: none;
+}
+
+.catalog-filter-price {
+  margin: 0 70px 0 0;
+  padding: 0;
+  border: none;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  width: 288px;
+}
+
+.placeholder-price-min {
+  border: 2px solid #FFFFFF;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 50%;
+}
+
+.placeholder-price-max {
+  border: 2px solid #FFFFFF;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 50%;
+}
+
+.placeholder-price {
+
+}
+
+.catalog-filter-price .range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #FFFFFF;
+}
+
+.catalog-filter-price .range-scale {
+  position: relative;
+  height: 4px;
+  background-color: #FFFFFF4D;
+}
+
+.range-bar .range-toggle {
+  background: #FFFFFF;
+  border: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.range-bar .range-toggle-min {
+  position: absolute;
+  top: -8px;
+}
+
+.range-bar .range-toggle-max {
+  position: absolute;
+  top: -8px;
+  right: -1px;
+}
+
+.catalog-filter-price .button {
+  width: 160px;
+  height: 48px;
+}
+
+/* Сортировка карточек */
+.sorting-container {
+  align-items: center;
+  display: flex;
+  padding: 0 70px;
+  margin-bottom: 56px;
+}
+
+.search-results-title {
+  margin: 0;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.search-results .select-control {
+  margin-left: auto;
+  margin-right: 78px;
+  font-size: 18px;
+  line-height: 21px;
+  box-sizing: border-box;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  padding-left: 20px;
+  width: 290px;
+  height: 50px;
+  appearance: none;
+  background-image: url("../images/catalog/arrow-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px top 20px;
+}
+
+.display-type {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+}
+
+.display-type-item .button {
+  background-color: #FFFFFF;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  width: 48px;
+  height: 48px;
+}
+
+.display-type-item .button:hover {
+  border: 2px solid #000000;
+}
+
+.display-type-item .button:focus {
+  border: 2px solid #68A2CA;
+}
+
+.display-type-item .button:active {
+  border: 2px solid #000000;
+}
+
+.display-type-item .button-сurrent {
+  border: 2px solid #000000;
+}
+
+.display-type-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+/* Карточки жилья */
+.housing-list {
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-bottom: 30px;
+  padding: 0 0 66px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 18px;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+/* Карточка жилья */
+.housing-card {
+  padding: 20px 20px 0 20px;
+  list-style: none;
+}
+
+.housing-card-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 16px;
+  row-gap: 20px;
+}
+
+/* Изображение в карточке жилья */
+.housing-card img {
+  display: flex;
+  padding-bottom: 16px;
+}
+
+/* Название в карточке жилья */
+.housing-card-title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 28px;
+  padding-bottom: 16px;
+}
+
+/* Тип в карточке жилья */
+.housing-type {
+  margin: 0;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+/* Стоимость в карточке жилья */
+.housing-card-price {
+  margin: 0;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+/* Звездочки рейтинга в карточке жилья
+   2 Звезды                         */
+.housing-card-star-2 {
+  background-image: url("../images/catalog/star.svg"), url("../images/catalog/star.svg");
+  background-repeat: no-repeat;
+  background-position: 0 10px, 24px 10px;
+}
+
+/* 3 Звезды */
+.housing-card-star-3 {
+  background-image: url("../images/catalog/star.svg"), url("../images/catalog/star.svg"), url("../images/catalog/star.svg");
+  background-repeat: no-repeat;
+  background-position: 0 10px, 24px 10px, 48px 10px, 72px 10px;
+}
+
+/* 4 Звезды */
+.housing-card-star-4 {
+  background-image: url("../images/catalog/star.svg"), url("../images/catalog/star.svg"), url("../images/catalog/star.svg"), url("../images/catalog/star.svg");
+  background-repeat: no-repeat;
+  background-position: 0 10px, 24px 10px, 48px 10px, 72px 10px;
+}
+
+/* Рейтинг в карточке жилья */
+.housing-card-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  min-width: 140px;
+  min-height: 37px;
+  background: #F2F2F2;
+  border-radius: 4px;
+}
+
+/* Кнопки в карточке жилья */
+.housing-card .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 140px;
+  min-height: 37px;
+}
+
+/* Пагинация */
+.pagination-container {
+  display: flex;
+  margin-bottom: 25px;
+  margin: 0 70px;
+}
+
+.pagination {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.pagination-link {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination-current {
+  background: #F2F2F2;
+  color: #000000;
+}
+
+.select-control-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.select-control-container .select-control {
+  margin: 0;
+  font-size: 18px;
+  line-height: 21px;
+  box-sizing: border-box;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  padding-left: 20px;
+  width: 160px;
+  height: 50px;
+  appearance: none;
+  background-image: url("../images/catalog/arrow-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px top 20px;
+}
+
+/* Наведение */
+/* Фокус (браузерный) */
+.select-control:hover,
+.select-control:focus {
+  border: 2px solid #68A2CA;
+}
+
+/* Нажатие */
+.select-control:active {
+  border: 2px solid #3F5E72;
+}
+
+.select-control-container p {
+  font-size: 18px;
+  line-height: 21px;
+  margin-right: 50px;
+}
+
+/* Подвал сайта */
+.main-footer {
+  display: flex;
+  box-sizing: border-box;
+  padding: 40px 70px 30px 70px;
+}
+
+.footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-social-item .button {
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 47px;
+  min-height: 50px;
+}
+
+.button:hover .footer-social-icon {
+  fill: #68A2CA;
+}
+
+.button:focus .footer-social-icon {
+  fill: #68A2CA;
+}
+
+.button:active .footer-social-icon {
+  fill: #68A2CA4D;
+}
+
+.footer-contacts-phone {
+  display: flex;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-contacts-phone:hover,
+.footer-contacts-phone:focus {
+  color: #756157;
+}
+
+.footer-contacts-phone:active {
+  color: #7561574D;
+}
+
+.htmlacademy-link {
+  display: flex;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+  width: 115px;
+  height: 50px;
+}
+
+.htmlacademy-link:hover .htmlacademy-link-icon,
+.htmlacademy-link:focus .htmlacademy-link-icon {
+  fill: #756157;
+}
+
+.htmlacademy-link:active .htmlacademy-link-icon {
+  fill: #7561574D;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
