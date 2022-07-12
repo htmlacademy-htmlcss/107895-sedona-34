@@ -406,6 +406,7 @@ body {
 .catalog-filter {
   box-sizing: border-box;
   padding: 35px 70px 70px 70px;
+  margin-bottom: 55px;
   color: #FFFFFF;
   background-color: #81B3D3;
   background: url("../images/catalog/catalog-filter-background.jpg") no-repeat;
@@ -485,27 +486,55 @@ body {
 
 .range-wrapper-inputs {
   display: flex;
-  width: 288px;
+  margin-bottom: 30px;
+}
+
+.wrapper-input-min {
+  display: flex;
+  position: relative;
+}
+
+.wrapper-input-max {
+  display: flex;
+  position: relative;
+}
+
+.price-lable {
+  position: absolute;
+  top: 8px;
+  right: 14px;
+  color: #FFFFFF4D;
 }
 
 .placeholder-price-min {
-  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
-  box-sizing: border-box;
-  width: 50%;
+  border: 2px solid #FFFFFF;
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+  background: none;
+  font-size: 18px;
+  line-height: 21px;
+  height: 48px;
+  width: 144px;
+  margin: 0;
+  padding-left: 20px;
 }
 
 .placeholder-price-max {
-  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
-  box-sizing: border-box;
-  width: 50%;
-}
-
-.placeholder-price {
-
+  border: 2px solid #FFFFFF;
+  border-radius: 0 4px 4px 0;
+  background: none;
+  font-size: 18px;
+  line-height: 21px;
+  height: 48px;
+  width: 144px;
+  margin: 0;
+  padding-left: 20px;
 }
 
 .catalog-filter-price .range-bar {
