@@ -412,18 +412,15 @@ body {
   background-size: 100% auto;
 }
 
-.catalog-filter-title {
-  margin: 0;
-  margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
-  text-transform: capitalize;
+.inner-container-title {
+  font-size: 60px;
+  line-height: 78px;
+  margin: 0 0 10px 0;
 }
 
 /* Хлебные крошки */
 .breadcrums {
-  margin: 0;
+  margin: 0 0 40px 0;
   padding: 0;
   display: flex;
   list-style-type: none;
@@ -455,22 +452,97 @@ body {
   display: flex;
 }
 
+.catalog-filter-form .catalog-filter-title {
+  margin: 0 0 30px 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: capitalize;
+}
+
+.catalog-filter-form .catalog-filter-list {
+  padding: 0;
+  margin: 0;
+}
+
 .catalog-filter-infa {
-  margin-right: 70px;
+  margin: 0 70px 0 0;
+  padding: 0;
+  border: none;
 }
 
 .catalog-filter-type {
-  margin-right: 175px;
+  padding: 0;
+  margin: 0 175px 0 0;
+  border: none;
 }
 
 .catalog-filter-price {
-  margin-left: auto;
+  margin: 0 70px 0 0;
+  padding: 0;
+  border: none;
 }
 
-.inner-container-title {
-  font-size: 60px;
-  line-height: 78px;
-  margin: 0;
+.range-wrapper-inputs {
+  display: flex;
+  width: 288px;
+}
+
+.placeholder-price-min {
+  border: 2px solid #FFFFFF;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 50%;
+}
+
+.placeholder-price-max {
+  border: 2px solid #FFFFFF;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 50%;
+}
+
+.placeholder-price {
+
+}
+
+.catalog-filter-price .range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #FFFFFF;
+}
+
+.catalog-filter-price .range-scale {
+  position: relative;
+  height: 4px;
+  background-color: #FFFFFF4D;
+}
+
+.range-bar .range-toggle {
+  background: #FFFFFF;
+  border: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.range-bar .range-toggle-min {
+  position: absolute;
+  top: -8px;
+}
+
+.range-bar .range-toggle-max {
+  position: absolute;
+  top: -8px;
+  right: -1px;
+}
+
+.catalog-filter-price .button {
+  width: 160px;
+  height: 48px;
 }
 
 /* Сортировка карточек */
