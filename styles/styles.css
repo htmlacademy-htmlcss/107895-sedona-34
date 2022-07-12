@@ -173,7 +173,7 @@ body {
 }
 
 /* Позиционирование иконок в правой части навигации */
-.navigation-user .navigation-icon svg {
+.navigation-icon svg {
   position: absolute;
   top: 0;
   bottom: 0;
