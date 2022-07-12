@@ -454,7 +454,7 @@ body {
 }
 
 .catalog-filter-form .catalog-filter-title {
-  margin: 0 0 30px 0;
+  margin: 0 0 34px 0;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -547,6 +547,7 @@ body {
   position: relative;
   height: 4px;
   background-color: #FFFFFF4D;
+  margin-bottom: 8px;
 }
 
 .range-bar .range-toggle {
@@ -569,9 +570,29 @@ body {
   right: -1px;
 }
 
-.catalog-filter-price .button {
+.catalog-filter-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin-left: auto;
+}
+
+.catalog-filter-buttons .button-blue {
   width: 160px;
   height: 48px;
+  margin-bottom: 20px;
+}
+
+.catalog-filter-buttons .button-reset {
+  margin: 0;
+  padding: 0;
+  color: #FFFFFF;
+  width: 160px;
+  height: 20px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 /* Сортировка карточек */
