@@ -49,6 +49,7 @@ body {
   line-height: 20px;
   text-align: center;
   border: none;
+  cursor: pointer;
 }
 
 /* Наведение */
@@ -394,6 +395,8 @@ body {
   font-size: 18px;
   line-height: 21px;
   padding-left: 24px;
+  outline: none;
+  cursor: pointer;
 }
 
 .subscribe-form .button {
@@ -454,6 +457,7 @@ body {
 }
 
 .catalog-filter-item .control {
+  cursor: pointer;
   position: relative;
   display: block;
   padding-left: 40px;
@@ -690,6 +694,7 @@ input::-webkit-inner-spin-button {
   border: none;
   font-size: 16px;
   line-height: 20px;
+  cursor: pointer;
 }
 
 .catalog-filter-buttons .button-reset:hover,
@@ -733,6 +738,7 @@ input::-webkit-inner-spin-button {
   background-repeat: no-repeat;
   background-position: right 20px top 20px;
   outline: none;
+  cursor: pointer;
 }
 
 .display-type {
@@ -1140,10 +1146,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-.form-container-checkin {
-  grid-column: 1 / -1;
-}
-
+.form-container-checkin,
 .form-container-departure {
   grid-column: 1 / -1;
 }
@@ -1171,12 +1174,12 @@ input::-webkit-inner-spin-button {
 }
 
 .form-modal-input:hover {
-  background-color: #e6e6e6;
+  background-color: #E6E6E6;
 }
 
 .form-modal-input:focus {
-  background-color: #e6e6e6;
-  outline: 3px solid #83b3d3;
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
 }
 
 .form-modal-input:not(:placeholder-shown) {
