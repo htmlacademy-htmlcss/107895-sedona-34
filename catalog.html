@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <title>Каталог — HTML Academy: Седона</title>
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
+    <link rel="stylesheet" href="./styles/styles.css">
   </head>
 
   <body>
@@ -15,7 +15,7 @@
       <header class="main-header">
         <!-- Логотип -->
         <a class="navigation-logo" href="index.html">
-          <img src="images/header/logo.svg" width="139" height="70" alt="Логотип седоны">
+          <img src="images/header/logo.svg" width="139" height="70" alt="Логотип седоны.">
         </a>
         <!-- Навигация -->
         <nav class="navigation">
@@ -61,53 +61,46 @@
           <div class="inner-container">
             <h1 class="inner-container-title">Гостиницы Седоны</h1>
             <!-- Хлебные крошки -->
-            <ul class="breadcrums">
-              <li class="breadcrums-item">
-                <a class="breadcrums-link" href="index.html">
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs-item">
+                <a class="breadcrumbs-link" href="index.html">
                   <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="breadcrums-item-icon" fill-rule="evenodd" clip-rule="evenodd"
+                    <path class="breadcrumbs-item-icon" fill-rule="evenodd" clip-rule="evenodd"
                       d="m.16 6.15 6-5.5 6 5.5v6.2h-12v-6.2Zm1 .4v4.8h10v-4.8l-5-4.5-5 4.5Zm4 3.8h-1v-3.5h4v3.5h-1v-2.5h-2v2.5Z"
                       fill="#fff" />
                   </svg>
                   <span class="visually-hidden">Главная страница.</span>
                 </a>
               </li>
-              <li class="breadcrums-item">
-                <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M5.05 4.07 1.25.67c-.2-.2-.6-.2-.9 0-.3.2-.2.6 0 .8l3.3 3-3.2 3c-.2.2-.2.6 0 .8 0 .1.3.2.4.2.1 0 .3-.1.4-.2l3.8-3.4c.3-.2.3-.6 0-.8Z"
-                    fill="#fff" />
-                </svg>
-              </li>
-              <li class="breadcrums-item">
-                <a class="breadcrums-link">Гостиницы</a>
+              <li class="breadcrumbs-item">
+                <a class="breadcrumbs-link">Гостиницы</a>
               </li>
             </ul>
           </div>
           <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
             <!-- Фильтр выбора инфраструктуры -->
-            <fieldset class="catalog-filter-infa">
+            <fieldset class="catalog-filter-infrastructure">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="control-input visually-hidden" type="checkbox" name="swimming-pool">
                     <span class="control-mark"></span>
-                    <span class="control-lable">Бассейн</span>
+                    <span class="control-label">Бассейн</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="control-input visually-hidden" type="checkbox" name="parking" checked>
                     <span class="control-mark"></span>
-                    <span class="control-lable">Парковка</span>
+                    <span class="control-label">Парковка</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="control-input visually-hidden" type="checkbox" name="wifi">
                     <span class="control-mark"></span>
-                    <span class="control-lable">Wi-Fi</span>
+                    <span class="control-label">Wi-Fi</span>
                   </label>
                 </li>
               </ul>
@@ -120,21 +113,21 @@
                   <label class="control">
                     <input class="control-input visually-hidden" type="radio" name="housing-type" value="hotel" checked>
                     <span class="control-mark"></span>
-                    <span class="control-lable">Гостиница</span>
+                    <span class="control-label">Гостиница</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="control-input visually-hidden" type="radio" name="housing-type" value="motel">
                     <span class="control-mark"></span>
-                    <span class="control-lable">Мотель</span>
+                    <span class="control-label">Мотель</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="control-input visually-hidden" type="radio" name="housing-type" value="apartments">
                     <span class="control-mark"></span>
-                    <span class="control-lable">Апартаменты</span>
+                    <span class="control-label">Апартаменты</span>
                   </label>
                 </li>
               </ul>
@@ -145,16 +138,16 @@
               <div class="catalog-filter-range">
                 <div class="range-wrapper-inputs">
                   <div class="wrapper-input-min">
-                    <input class="placeholder-price-min" type="number" placeholder="0">
-                    <label class="price-lable">от</label>
+                    <input class="placeholder-price-min" type="number" name="price-min" placeholder="0" required>
+                    <label class="price-label">от</label>
                   </div>
                   <div class="wrapper-input-max">
-                    <input class="placeholder-price-max" type="number" placeholder="9000">
-                    <label class="price-lable">до</label>
+                    <input class="placeholder-price-max" type="number" name="price-max" placeholder="9000" required>
+                    <label class="price-label">до</label>
                   </div>
                 </div>
                 <div class="range-scale">
-                  <div class="range-bar" style="width: 225px">
+                  <div class="range-bar" style="width: 235px">
                     <button type="button" class="range-toggle range-toggle-min"></button>
                     <button type="button" class="range-toggle range-toggle-max"></button>
                   </div>
@@ -210,8 +203,10 @@
           <!-- Карточки гостиниц -->
           <ul class="housing-list">
             <li class="housing-card">
-              <img src="images/catalog/hotel-1.jpg" width="300" height="211" alt="Пещера каньона">
-              <h3 class="housing-card-title">Amara Resort & Spa</h3>
+              <a href="#" class="housing-card-link">
+                <img src="images/catalog/hotel-1.jpg" width="300" height="211" alt="Пещера каньона.">
+                <h3 class="housing-card-title">Amara Resort & Spa</h3>
+              </a>
               <div class="housing-card-content">
                 <p class="housing-type">Гостиница</p>
                 <p class="housing-card-price">От 4000 ₽</p>
@@ -222,20 +217,24 @@
               </div>
             </li>
             <li class="housing-card">
-              <img src="images/catalog/hotel-2.jpg" width="300" height="211" alt="Каньон на фоне радуги">
-              <h3 class="housing-card-title">Villas at Poco Diablo</h3>
+              <a href="#" class="housing-card-link">
+                <img src="images/catalog/hotel-2.jpg" width="300" height="211" alt="Каньон на фоне радуги.">
+                <h3 class="housing-card-title">Villas at Poco Diablo</h3>
+              </a>
               <div class="housing-card-content">
                 <p class="housing-type">Гостиница</p>
                 <p class="housing-card-price">От 5000 ₽</p>
                 <a class="button" href="#">Подробнее</a>
-                <button class="button button-green" type="button">В избранное</button>
+                <button class="button button-green" type="button">В избранном</button>
                 <div class="housing-card-star-4"></div>
                 <p class="housing-card-rating">Рейтинг: 9,2</p>
               </div>
             </li>
             <li class="housing-card">
-              <img src="images/catalog/hotel-3.jpg" width="300" height="211" alt="Национальный заповедник Коконино">
-              <h3 class="housing-card-title">Desert Quail Inn</h3>
+              <a href="#" class="housing-card-link">
+                <img src="images/catalog/hotel-3.jpg" width="300" height="211" alt="Национальный заповедник Коконино.">
+                <h3 class="housing-card-title">Desert Quail Inn</h3>
+              </a>
               <div class="housing-card-content">
                 <p class="housing-type">Гостиница</p>
                 <p class="housing-card-price">От 2500 ₽</p>
@@ -246,8 +245,10 @@
               </div>
             </li>
             <li class="housing-card">
-              <img src="images/catalog/hotel-4.jpg" width="300" height="211" alt="Каньон в ночное время на фоне звезд">
-              <h3 class="housing-card-title">Amara Resort & Spa</h3>
+              <a href="#" class="housing-card-link">
+                <img src="images/catalog/hotel-4.jpg" width="300" height="211" alt="Каньон в ночное время на фоне звезд.">
+                <h3 class="housing-card-title">GreenTree Inn</h3>
+              </a>
               <div class="housing-card-content">
                 <p class="housing-type">Гостиница</p>
                 <p class="housing-card-price">От 1500 ₽</p>
@@ -283,11 +284,11 @@
             <!-- Количиство гостиниц на странице -->
             <div class="select-control-container">
               <p>Гостиниц на странице:</p>
-              <select class="select-control" aria-label="Количиство гостиниц на странице">
+              <select class="select-control" aria-label="Количиство гостиниц на странице" >
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
-                <option value="4">4</option>
+                <option value="4" selected="selected">4</option>
                 <option value="5">5</option>
                 <option value="6">6</option>
               </select>
@@ -297,7 +298,7 @@
         <!-- Подписка -->
         <section class="subscribe-catalog">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-          <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="subscribe-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="subscribe-email">Email</label>
             <input type="email" name="subscribe-email" id="subscribe-email" placeholder="Ваш e-mail" required>
