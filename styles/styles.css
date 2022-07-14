@@ -254,6 +254,7 @@ body {
 .advantages-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   margin: 0;
   padding: 0;
   text-align: center;
@@ -262,8 +263,12 @@ body {
 
 /* Карточка преимущества */
 .advantages-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 0;
-  padding: 92px 85px;
+  padding: 0 85px 0 85px;
 }
 
 /* Карточка в преимуществах */
@@ -346,6 +351,9 @@ body {
 .hotel-search .button {
   width: 574px;
   height: 60px;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
 }
 
 /* Подписка */
@@ -405,6 +413,9 @@ body {
   margin: 0;
   padding: 0;
   border-radius: 0 10px 10px 0;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
 }
 
 /* Фильтры для выбора гостиницы */
