@@ -574,9 +574,13 @@ body {
   border: none;
 }
 
+.catalog-filter-price .catalog-filter-title {
+  margin-bottom: 34px;
+}
+
 .range-wrapper-inputs {
   display: flex;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 }
 
 .wrapper-input-min {
@@ -694,6 +698,7 @@ input::-webkit-inner-spin-button {
 }
 
 .catalog-filter-buttons {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -704,10 +709,13 @@ input::-webkit-inner-spin-button {
 .catalog-filter-buttons .button-blue {
   width: 160px;
   height: 48px;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
 }
 
 .catalog-filter-buttons .button-reset {
+  position: absolute;
+  bottom: -5px;
+  right: 30px;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -727,7 +735,7 @@ input::-webkit-inner-spin-button {
 }
 
 .catalog-filter-buttons .button-reset:focus {
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
   border-radius: 4px;
 }
 
@@ -802,9 +810,9 @@ input::-webkit-inner-spin-button {
 
 /* Карточки жилья */
 .housing-list {
-  margin-left: 70px;
-  margin-right: 70px;
-  margin-bottom: 30px;
+  margin-left: 73px;
+  margin-right: 71px;
+  margin-bottom: 28px;
   padding: 0 0 66px 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -814,7 +822,7 @@ input::-webkit-inner-spin-button {
 
 /* Карточка жилья */
 .housing-card {
-  padding: 20px 20px 0 20px;
+  padding: 20px;
   list-style: none;
 }
 
@@ -826,8 +834,8 @@ input::-webkit-inner-spin-button {
 .housing-card-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 16px;
-  row-gap: 20px;
+  column-gap: 20px;
+  row-gap: 16px;
 }
 
 /* Изображение в карточке жилья */
@@ -910,7 +918,7 @@ input::-webkit-inner-spin-button {
 /* Пагинация */
 .pagination-container {
   display: flex;
-  margin: 0 70px 25px 70px;
+  margin: 0 70px 25px 73px;
 }
 
 .pagination {
