@@ -44,6 +44,7 @@ body {
   color: #FFFFFF;
   text-decoration: none;
   text-transform: uppercase;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -429,14 +430,25 @@ body {
   padding: 0;
   display: flex;
   list-style-type: none;
-  gap: 10px;
+  gap: 25px;
 }
 
 .breadcrumbs-item {
+  position: relative;
   display: flex;
   align-items: center;
   font-size: 16px;
   line-height: 21px;
+}
+
+.breadcrumbs-item:not(:first-child)::before {
+  position: absolute;
+  content: "";
+  background-image: url("../images/catalog/arrow-right.svg");
+  width: 6px;
+  height: 9px;
+  top: 6px;
+  left: -14px;
 }
 
 .breadcrumbs-item:hover,
@@ -475,15 +487,6 @@ body {
   border-radius: 4px;
 }
 
-.control:hover .control-mark,
-.control:active .control-mark {
-  background: #FFFFFF99;
-}
-
-.control:focus .control-mark {
-  border: 3px solid #83B3D3;
-}
-
 .control-input[type="checkbox"]:checked + .control-mark::after {
   position: absolute;
   content: "";
@@ -514,6 +517,15 @@ body {
   border-radius: 50%;
   top: 5px;
   left: 5px;
+}
+
+.control:hover .control-mark,
+.control:active .control-mark {
+  background: #FFFFFF99;
+}
+
+.control-input:focus + .control-mark {
+  outline: 3px solid #83B3D3;
 }
 
 .catalog-filter-form {
@@ -795,6 +807,11 @@ input::-webkit-inner-spin-button {
   list-style: none;
 }
 
+.housing-card-link {
+  color: #000;
+  text-decoration: none;
+}
+
 .housing-card-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -882,8 +899,7 @@ input::-webkit-inner-spin-button {
 /* Пагинация */
 .pagination-container {
   display: flex;
-  margin-bottom: 25px;
-  margin: 0 70px;
+  margin: 0 70px 25px 70px;
 }
 
 .pagination {
