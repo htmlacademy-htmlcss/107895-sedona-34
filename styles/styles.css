@@ -118,6 +118,7 @@ body {
 .main-header {
   display: flex;
   box-sizing: border-box;
+  align-items: flex-start;
   padding-left: 70px;
   padding-right: 70px;
 }
@@ -594,8 +595,10 @@ body {
 }
 
 .price-label {
+  font-size: 18px;
+  line-height: 23px;
   position: absolute;
-  top: 8px;
+  top: 10px;
   right: 14px;
   color: #FFFFFF4D;
 }
@@ -612,7 +615,7 @@ body {
   height: 48px;
   width: 144px;
   margin: 0;
-  padding-left: 20px;
+  padding-left: 18px;
 }
 
 .placeholder-price-max {
@@ -627,7 +630,12 @@ body {
   height: 48px;
   width: 144px;
   margin: 0;
-  padding-left: 20px;
+  padding-left: 14px;
+}
+
+.placeholder-price-min::placeholder,
+.placeholder-price-max::placeholder {
+  color: #FFFFFF;
 }
 
 /* Убираем стрелочки */
